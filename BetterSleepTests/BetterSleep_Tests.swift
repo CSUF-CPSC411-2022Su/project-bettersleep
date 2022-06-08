@@ -1,6 +1,6 @@
 //
 //  BetterSleep_Tests.swift
-//  BetterSleep+Tests
+//  BetterSleepTests
 //
 //  Created by Nazeri, Daniel on 6/8/22.
 //
