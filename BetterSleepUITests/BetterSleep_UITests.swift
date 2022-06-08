@@ -1,13 +1,13 @@
 //
-//  Tests_macOS.swift
-//  Tests macOS
+//  BetterSleep_UITests.swift
+//  BetterSleep+UITests
 //
 //  Created by Nazeri, Daniel on 6/8/22.
 //
 
 import XCTest
 
-class Tests_macOS: XCTestCase {
+class BetterSleep_UITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

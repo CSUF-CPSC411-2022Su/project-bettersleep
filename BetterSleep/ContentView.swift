@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Shared
+//  BetterSleep+
 //
 //  Created by Nazeri, Daniel on 6/8/22.
 //

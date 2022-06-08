@@ -1,13 +1,13 @@
 //
-//  Tests_macOSLaunchTests.swift
-//  Tests macOS
+//  BetterSleep_UITestsLaunchTests.swift
+//  BetterSleep+UITests
 //
 //  Created by Nazeri, Daniel on 6/8/22.
 //
 
 import XCTest
 
-class Tests_macOSLaunchTests: XCTestCase {
+class BetterSleep_UITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
