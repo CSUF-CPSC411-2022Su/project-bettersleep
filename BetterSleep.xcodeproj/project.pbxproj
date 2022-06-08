@@ -37,6 +37,10 @@
 		4EE3598328514BCB00AC283D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE3596928514BCB00AC283D /* ContentView.swift */; };
 		4EE3598428514BCB00AC283D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE3596928514BCB00AC283D /* ContentView.swift */; };
 		4EE3598528514BCB00AC283D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE3596928514BCB00AC283D /* ContentView.swift */; };
+		7A653F6828514E9300C303F8 /* SleepTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A653F6728514E9300C303F8 /* SleepTimer.swift */; };
+		7A653F6928514E9300C303F8 /* SleepTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A653F6728514E9300C303F8 /* SleepTimer.swift */; };
+		7A653F6A28514E9300C303F8 /* SleepTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A653F6728514E9300C303F8 /* SleepTimer.swift */; };
+		7A653F6B28514E9300C303F8 /* SleepTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A653F6728514E9300C303F8 /* SleepTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +74,7 @@
 		4EE3596628514BCB00AC283D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EE3596828514BCB00AC283D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4EE3596928514BCB00AC283D /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7A653F6728514E9300C303F8 /* SleepTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +156,7 @@
 				4EE3596628514BCB00AC283D /* Assets.xcassets */,
 				4EE3596728514BCB00AC283D /* Preview Content */,
 				4EE3596928514BCB00AC283D /* ContentView.swift */,
+				7A653F6728514E9300C303F8 /* SleepTimer.swift */,
 			);
 			path = BetterSleep;
 			sourceTree = "<group>";
@@ -330,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EE3597228514BCB00AC283D /* BetterSleep_Tests.swift in Sources */,
+				7A653F6828514E9300C303F8 /* SleepTimer.swift in Sources */,
 				4EE3598228514BCB00AC283D /* ContentView.swift in Sources */,
 				4EE3596A28514BCB00AC283D /* BetterSleep_UITestsLaunchTests.swift in Sources */,
 				4EE3596E28514BCB00AC283D /* BetterSleep_UITests.swift in Sources */,
@@ -342,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EE3597328514BCB00AC283D /* BetterSleep_Tests.swift in Sources */,
+				7A653F6928514E9300C303F8 /* SleepTimer.swift in Sources */,
 				4EE3598328514BCB00AC283D /* ContentView.swift in Sources */,
 				4EE3596B28514BCB00AC283D /* BetterSleep_UITestsLaunchTests.swift in Sources */,
 				4EE3596F28514BCB00AC283D /* BetterSleep_UITests.swift in Sources */,
@@ -354,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EE3597428514BCB00AC283D /* BetterSleep_Tests.swift in Sources */,
+				7A653F6A28514E9300C303F8 /* SleepTimer.swift in Sources */,
 				4EE3598428514BCB00AC283D /* ContentView.swift in Sources */,
 				4EE3596C28514BCB00AC283D /* BetterSleep_UITestsLaunchTests.swift in Sources */,
 				4EE3597028514BCB00AC283D /* BetterSleep_UITests.swift in Sources */,
@@ -366,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EE3597528514BCB00AC283D /* BetterSleep_Tests.swift in Sources */,
+				7A653F6B28514E9300C303F8 /* SleepTimer.swift in Sources */,
 				4EE3598528514BCB00AC283D /* ContentView.swift in Sources */,
 				4EE3596D28514BCB00AC283D /* BetterSleep_UITestsLaunchTests.swift in Sources */,
 				4EE3597128514BCB00AC283D /* BetterSleep_UITests.swift in Sources */,
