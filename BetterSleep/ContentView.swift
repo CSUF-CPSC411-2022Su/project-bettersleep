@@ -10,13 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Text("Z Z Z . . .")
-                .padding()
-            ZStack {
-                Circle()
-                Text("You have slept for x Hours").foregroundColor(.blue)
-            }
-            Text("Tap Anywhere to wake up . . .").foregroundColor(.blue)
+            Text("Hello World")
         }
             .padding()
     }
