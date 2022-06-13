@@ -4,8 +4,9 @@
 //
 //  Created by csuftitan on 6/12/22.
 //
-
+/*
 import Foundation
 struct Audio_Record {
-    <#fields#>
+    var audio
 }
+*/

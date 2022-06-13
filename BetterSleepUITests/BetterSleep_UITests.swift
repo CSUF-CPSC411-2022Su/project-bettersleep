@@ -4,7 +4,7 @@
 //
 //  Created by Nazeri, Daniel on 6/8/22.
 //
-
+/*
 import XCTest
 
 class BetterSleep_UITests: XCTestCase {
@@ -39,3 +39,4 @@ class BetterSleep_UITests: XCTestCase {
         }
     }
 }
+*/
