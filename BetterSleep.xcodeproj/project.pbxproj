@@ -18,9 +18,6 @@
 		4EE3597028514BCB00AC283D /* BetterSleep_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE3596128514BCB00AC283D /* BetterSleep_UITests.swift */; };
 		4EE3597128514BCB00AC283D /* BetterSleep_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE3596128514BCB00AC283D /* BetterSleep_UITests.swift */; };
 		4EE3597228514BCB00AC283D /* BetterSleep_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE3596328514BCB00AC283D /* BetterSleep_Tests.swift */; };
-		4EE3597328514BCB00AC283D /* BetterSleep_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE3596328514BCB00AC283D /* BetterSleep_Tests.swift */; };
-		4EE3597428514BCB00AC283D /* BetterSleep_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE3596328514BCB00AC283D /* BetterSleep_Tests.swift */; };
-		4EE3597528514BCB00AC283D /* BetterSleep_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE3596328514BCB00AC283D /* BetterSleep_Tests.swift */; };
 		4EE3597628514BCB00AC283D /* BetterSleep_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE3596528514BCB00AC283D /* BetterSleep_App.swift */; };
 		4EE3597728514BCB00AC283D /* BetterSleep_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE3596528514BCB00AC283D /* BetterSleep_App.swift */; };
 		4EE3597828514BCB00AC283D /* BetterSleep_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE3596528514BCB00AC283D /* BetterSleep_App.swift */; };
@@ -37,10 +34,8 @@
 		4EE3598328514BCB00AC283D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE3596928514BCB00AC283D /* ContentView.swift */; };
 		4EE3598428514BCB00AC283D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE3596928514BCB00AC283D /* ContentView.swift */; };
 		4EE3598528514BCB00AC283D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE3596928514BCB00AC283D /* ContentView.swift */; };
+		7A6B41E22856F78A00D6D355 /* Audio_Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A82EB172856D992008C2902 /* Audio_Record.swift */; };
 		7A82EB182856D992008C2902 /* Audio_Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A82EB172856D992008C2902 /* Audio_Record.swift */; };
-		7A82EB192856D992008C2902 /* Audio_Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A82EB172856D992008C2902 /* Audio_Record.swift */; };
-		7A82EB1A2856D992008C2902 /* Audio_Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A82EB172856D992008C2902 /* Audio_Record.swift */; };
-		7A82EB1B2856D992008C2902 /* Audio_Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A82EB172856D992008C2902 /* Audio_Record.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +52,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4EE358B62851459C00AC283D;
 			remoteInfo = "BetterSleep (macOS)";
+		};
+		7AF3DE3A2857238B00405E5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EE358A52851459800AC283D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EE358B02851459C00AC283D;
+			remoteInfo = "BetterSleep (iOS)";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -236,6 +238,7 @@
 			);
 			dependencies = (
 				4EE358CC2851459C00AC283D /* PBXTargetDependency */,
+				7AF3DE3B2857238B00405E5D /* PBXTargetDependency */,
 			);
 			name = "Tests macOS";
 			productName = "Tests macOS";
@@ -264,7 +267,7 @@
 					};
 					4EE358C92851459C00AC283D = {
 						CreatedOnToolsVersion = 13.4;
-						TestTargetID = 4EE358B62851459C00AC283D;
+						TestTargetID = 4EE358B02851459C00AC283D;
 					};
 				};
 			};
@@ -348,8 +351,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EE3597328514BCB00AC283D /* BetterSleep_Tests.swift in Sources */,
-				7A82EB192856D992008C2902 /* Audio_Record.swift in Sources */,
 				4EE3598328514BCB00AC283D /* ContentView.swift in Sources */,
 				4EE3596B28514BCB00AC283D /* BetterSleep_UITestsLaunchTests.swift in Sources */,
 				4EE3596F28514BCB00AC283D /* BetterSleep_UITests.swift in Sources */,
@@ -361,8 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EE3597428514BCB00AC283D /* BetterSleep_Tests.swift in Sources */,
-				7A82EB1A2856D992008C2902 /* Audio_Record.swift in Sources */,
+				7A6B41E22856F78A00D6D355 /* Audio_Record.swift in Sources */,
 				4EE3598428514BCB00AC283D /* ContentView.swift in Sources */,
 				4EE3596C28514BCB00AC283D /* BetterSleep_UITestsLaunchTests.swift in Sources */,
 				4EE3597028514BCB00AC283D /* BetterSleep_UITests.swift in Sources */,
@@ -374,8 +374,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EE3597528514BCB00AC283D /* BetterSleep_Tests.swift in Sources */,
-				7A82EB1B2856D992008C2902 /* Audio_Record.swift in Sources */,
 				4EE3598528514BCB00AC283D /* ContentView.swift in Sources */,
 				4EE3596D28514BCB00AC283D /* BetterSleep_UITestsLaunchTests.swift in Sources */,
 				4EE3597128514BCB00AC283D /* BetterSleep_UITests.swift in Sources */,
@@ -395,6 +393,11 @@
 			isa = PBXTargetDependency;
 			target = 4EE358B62851459C00AC283D /* BetterSleep (macOS) */;
 			targetProxy = 4EE358CB2851459C00AC283D /* PBXContainerItemProxy */;
+		};
+		7AF3DE3B2857238B00405E5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EE358B02851459C00AC283D /* BetterSleep (iOS) */;
+			targetProxy = 7AF3DE3A2857238B00405E5D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -449,6 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -501,6 +505,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -520,9 +525,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -549,9 +555,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -583,7 +590,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cpsc411.BetterSleep;
 				PRODUCT_NAME = BetterSleep;
@@ -609,7 +616,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cpsc411.BetterSleep;
 				PRODUCT_NAME = BetterSleep;
@@ -623,13 +630,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "cpsc411.Tests-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -642,13 +652,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "cpsc411.Tests-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -665,14 +678,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "cpsc411.Tests-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "BetterSleep (macOS)";
+				TEST_TARGET_NAME = "BetterSleep (iOS)";
 			};
 			name = Debug;
 		};
@@ -683,14 +696,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "cpsc411.Tests-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "BetterSleep (macOS)";
+				TEST_TARGET_NAME = "BetterSleep (iOS)";
 			};
 			name = Release;
 		};
