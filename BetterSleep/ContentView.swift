@@ -9,8 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text("I plan to fall asleep at...")
+                .padding()
+                .offset(y: -150)
+            Button("Calculate") { }
+                .offset(y: 150)
+                .buttonStyle(.borderedProminent)
+        }
+    
+        HStack {
+            Button("Hour") { }
+            Button("Minute") { }
+            Button("AM/PM") { }
+            
+        }
+        .buttonStyle(.bordered)
+        .offset(y: -50)
     }
 }
 
@@ -19,3 +34,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
