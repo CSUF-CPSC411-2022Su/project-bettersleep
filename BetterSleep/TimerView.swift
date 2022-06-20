@@ -8,17 +8,32 @@
 import SwiftUI
 
 struct TimerView: View {
+    @StateObject var timer = SleepTimer(timeGoal: 8.0)
+    
+    
+    
     var body: some View {
-        VStack {
-            Text("Z Z Z . . .")
-                .padding()
-            ZStack {
-                Circle()
-                Text("You have slept for x Hours").foregroundColor(.blue)
+        NavigationView{
+            VStack {
+                Text("Z Z Z . . .")
+                    .padding()
+                ZStack {
+                    Circle()
+                    Text("You have slept for \(timer.timeSlept) Hours").foregroundColor(.blue)
+                }
+                NavigationLink(destination: AwakeView()) {
+                    
+                    Text("Tap Here to wake up . . .").foregroundColor(.blue)
+                }
+                
             }
-            Text("Tap Anywhere to wake up . . .").foregroundColor(.blue)
-        }
-            .padding()
+        }.environmentObject(timer)
+    }
+}
+struct AwakeView: View {
+    @EnvironmentObject var timer : SleepTimer
+    var body: some View {
+        Text("Good Morning, you slept for a total of \(timer.timeSlept) Hours")
     }
 }
 struct TimerView_Previews: PreviewProvider {

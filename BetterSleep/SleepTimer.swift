@@ -7,14 +7,15 @@
 
 import Foundation
 
-class SleepTimer
+class SleepTimer: ObservableObject
 {
-    var timeSlept : Double
-    var timeGoal : Double
+    
+    @Published var timeSlept : Double
+    @Published var timeGoal : Double
     init(timeGoal : Double)
     {
         self.timeGoal = timeGoal
-        self.timeSlept = 0.0
+        self.timeSlept = 5.5
     }
     
     func stopSleeping(at timeSlept : Double){
