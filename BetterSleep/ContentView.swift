@@ -4,42 +4,52 @@
 //Created by tilak Ghorashainee 6/13/2022
 
 import SwiftUI
+import AVFoundation
 struct ContentView: View{
+    @State var AVAudioRecorder: String = " "
     var body: some View{
-        Home()
-        // darkmode color for the home scree
+       Home()
+        //darkmode color for the home scree
             .preferredColorScheme(.dark)
-    }
-}
-struct ContentView_Previews: PreviewProvider{
-    static var previews: some View {
-        ContentView()
+      
         
+        TabView{
+            Text("BetterSleep info")
+            .tag(1)
+            Rectangle()
+            Image(systemName:"info")
+
+        }
     }
-}
-struct Home: View{
+    struct Home: View{
     @State var record = false
     var body: some View{
     NavigationView{
-            VStack{
-                Button(action:{
-                   self.record.toggle()
-                }) {
+        VStack{
+            Button(action:{
+                self.record.toggle()
+            }) {
                     ZStack{
                        Circle()
                         .fill(Color.red)
-                        .frame(width:50, height:50)
+                        .frame(width:70, height:70)
                   if self.record{
                         Circle()
-                            .stroke(Color.black, lineWidth: 5)
-                            .frame(width:70, height:70)
-                            
+                            .stroke(Color.white, lineWidth: 5)
+                            .frame(width:85, height:85)
                     }
                 }
             }
-                .padding(.vertical, 25)
+            .padding(.vertical,10)
         }
-         .navigationBarTitle("Sleeping Audio Record")
+        .navigationBarTitle("Audio Record")
+       }
+    }
+  }
+    struct ContentView_Previews: PreviewProvider{
+      static var previews: some View {
+          ContentView()
+           
+        }
       }
-   }
-}
+    }
