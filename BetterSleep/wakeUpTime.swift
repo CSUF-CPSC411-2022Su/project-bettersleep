@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct wakeUpTime {
-    var hour: Int
-    var minute: Int
-    var amPM: String
+class wakeUpTime: ObservableObject {
+    @Published var hour: Int
+    @Published var minute: Int
+    @Published var amPM: String
     
     init(hour: Int, minute: Int, amPM: String) {
         self.hour = hour
