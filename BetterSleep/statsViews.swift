@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import SwiftUICharts
 
 // Display stats from stats.swift
 struct statsList: View {
-    VStack {
-        print(stats)
+    var body: some View{
+        VStack {
+            print(stats)
+        }
     }
 }
