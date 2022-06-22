@@ -190,6 +190,7 @@
 				4EE3596628514BCB00AC283D /* Assets.xcassets */,
 				4EE3596728514BCB00AC283D /* Preview Content */,
 				4EE3596928514BCB00AC283D /* ContentView.swift */,
+				10822953286125990050ED8A /* wakeUpTimeView.swift */,
 				4E698FB2286184E200829BEF /* stats.swift */,
 				4E698FBC2861898100829BEF /* statsViews.swift */,
 				7AEEE12D2857FD9D0065612F /* TimerView.swift */,
@@ -202,7 +203,6 @@
 		4EE3596728514BCB00AC283D /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				10822953286125990050ED8A /* wakeUpTimeView.swift */,
 				4EE3596828514BCB00AC283D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
