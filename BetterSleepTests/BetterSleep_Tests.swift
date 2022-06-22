@@ -4,7 +4,7 @@
 //
 //  Created by Nazeri, Daniel on 6/8/22.
 //
-
+/*
 import XCTest
 @testable import BetterSleep_
 
@@ -34,3 +34,4 @@ class BetterSleep_Tests: XCTestCase {
     }
 
 }
+ */
