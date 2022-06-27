@@ -8,8 +8,11 @@
 import SwiftUI
 
 // Display stats from stats.swift
-struct statsList: View {
-    VStack {
-        print(stats)
+struct statsViews: View {
+    var body: some View {
+        VStack {
+            Text("WIP --- --- -- ")
+            //LineChartView(data: [8,23,54,32,12,37,7,23,43], title: "Title", legend: "Legendary")
+        }
     }
 }
