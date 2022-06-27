@@ -9,16 +9,32 @@ import SwiftUI
 
 struct wakeUpTimeView: View {
     @StateObject var timeCalc = wakeUpTime(hour: 10, minute: 30, amPM: "AM")
+    @State var currentTime = Date()
+    var closedRange = Calendar.current.date(byAdding: .year, value: -1, to: Date())!
+    
+    func formatTime() -> String {
+        let components = Calendar.current.dateComponents([.hour, .minute], from: currentTime)
+        let hour = components.hour ?? 0
+        let minute = components.minute ?? 0
+        
+        return "\(hour):\(minute)"
+    }
+
     var body: some View {
         NavigationView {
             VStack {
-                textView()
-                buttonView()
-                NavigationLink(destination: viewTime(), label: {
-                    calcButtonView()
-                })
+                Form {
+                    Section(header:Text("Pick a time")) {
+                        DatePicker(" ➤➤➤➤➤   ", selection: $currentTime)
+                        Text("\(formatTime())")
+                    }
+                    NavigationLink(destination: viewTime(), label: {
+                        calcButtonView()
+                    })
+                }
+                .navigationTitle("I plan to wake up at...")
             }
-        }.environmentObject(timeCalc)
+        } .environmentObject(timeCalc)
     }
 }
 
@@ -33,40 +49,10 @@ struct calcButtonView: View {
     var body: some View {
         Text("Calculate")
             .bold()
-            .frame(width: 150, height: 50)
-            .background(Color.blue)
+            .frame(width: 275, height: 50)
+            .background(Color.red)
             .foregroundColor(Color.white)
             .cornerRadius(10)
-    }
-}
-
-struct buttonView: View {
-    var body: some View {
-        HStack {
-            Text("Hour")
-                .frame(width: 100, height: 50)
-                .background(Color.gray.opacity(0.5))
-                .cornerRadius(10)
-                .offset(y: -75)
-            Text("Minute")
-                .frame(width: 100, height: 50)
-                .background(Color.gray.opacity(0.5))
-                .cornerRadius(10)
-                .offset(y: -75)
-            Text("AM/PM")
-                .frame(width: 100, height: 50)
-                .background(Color.gray.opacity(0.5))
-                .cornerRadius(10)
-                .offset(y: -75)
-        }
-    }
-}
-
-struct textView: View {
-    var body: some View {
-        Text("I plan to fall asleep at...").font(.largeTitle)
-            .padding()
-            .offset(y: -150)
     }
 }
 

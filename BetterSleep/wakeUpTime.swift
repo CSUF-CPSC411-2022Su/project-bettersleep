@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 class wakeUpTime: ObservableObject {
     @Published var hour: Int
@@ -18,7 +19,9 @@ class wakeUpTime: ObservableObject {
         self.amPM = amPM
     }
     
-    func printTime() {
+    public func printTime() {
         print("\(hour) : \(minute) \(amPM)")
     }
+    
+    
 }

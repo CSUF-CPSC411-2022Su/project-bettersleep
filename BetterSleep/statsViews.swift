@@ -8,8 +8,8 @@
 import SwiftUI
 
 // Display stats from stats.swift
-struct statsList: View {
-    VStack {
-        print(stats)
-    }
-}
+//struct statsList: View {
+//    VStack {
+//        print(stats)
+//    }
+//}
