@@ -20,11 +20,11 @@ struct ContentView: View {
                     Image(systemName:"timer")
                     Text("Sleep Timer")
                 }
-            statsViews()
-                .tabItem{
-                    Image(systemName: "chart.bar.fill")
-                    Text("Statistics")
-                }
+//            statsViews()
+//                .tabItem{
+//                    Image(systemName: "chart.bar.fill")
+//                    Text("Statistics")
+//                }
         }
     }
 }

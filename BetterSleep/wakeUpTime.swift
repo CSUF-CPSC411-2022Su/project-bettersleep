@@ -6,19 +6,20 @@
 //
 
 import Foundation
+import SwiftUI
 
 class wakeUpTime: ObservableObject {
     @Published var hour: Int
     @Published var minute: Int
-    @Published var amPM: String
+    //@Published var amPM: String
     
-    init(hour: Int, minute: Int, amPM: String) {
+    init(hour: Int, minute: Int) {
         self.hour = hour
         self.minute = minute
-        self.amPM = amPM
+        //self.amPM = amPM
     }
     
-    func printTime() {
-        print("\(hour) : \(minute) \(amPM)")
+    public func printTime() {
+        print("\(hour) : \(minute)")
     }
 }
