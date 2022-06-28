@@ -9,9 +9,9 @@ import SwiftUI
 @main
 struct BetterSleep_App: App {
     var body: some Scene {
-        WindowGroup {
+       WindowGroup {
           ContentView()
             ViewController()
-       }
+      }
     }
 }
