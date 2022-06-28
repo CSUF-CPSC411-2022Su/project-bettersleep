@@ -39,7 +39,8 @@ struct ContentView: View{
     NavigationView{
         VStack{
             Button(action:{
-                //self.record.toggle()
+            //Button(action:{
+                self.record.toggle()
                 //recording Audio
                 
                 do{
