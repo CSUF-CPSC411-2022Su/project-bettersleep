@@ -19,29 +19,30 @@ struct wakeUpTimeView: View {
         
         return "\(hour):\(minute)"
     }
-    
-    func calcTime() -> String {
-        let components = Calendar.current.dateComponents([.hour, .minute], from: currentTime)
-        let hour = (components.hour ?? 0) + 8
-        let minute = components.minute ?? 0
-        
-        return "\(hour):\(minute)"
-    }
 
     var body: some View {
         NavigationView {
             VStack {
                 Form {
-                    Section(header:Text("Pick a time")) {
+                    Section(header:Text("Pick a sleep time")) {
                         DatePicker(" ➤➤➤➤➤   ", selection: $currentTime)
                         Text("\(formatTime())")
                     }
                     NavigationLink(destination: viewTime(), label: {
-                        calcButtonView()
-                        
+                        calcButtonView().onTapGesture {
+                            let components = Calendar.current.dateComponents([.hour, .minute], from: currentTime)
+                            var hour = (components.hour ?? 0) + 8
+                            
+                            if (hour > 23) {
+                                hour = 0
+                            }
+                            
+                            let minute = components.minute ?? 0
+                            timeCalc.hour = hour
+                            timeCalc.minute = minute
+                        }
                     })
-                }
-                .navigationTitle("I plan to wake up at...")
+                } .navigationTitle("I plan to wake up at...")
             }
         } .environmentObject(timeCalc)
     }
@@ -49,11 +50,15 @@ struct wakeUpTimeView: View {
 
 struct viewTime: View {
     @EnvironmentObject var optimalTime: wakeUpTime
-    
-    
-    
     var body: some View {
+        Text("You should try to wake up at...")
+            .fontWeight(.bold)
+            .padding()
+            .font(.title2)
         Text("\(optimalTime.hour):\(optimalTime.minute)")
+            .fontWeight(.bold)
+            .padding()
+            .font(.largeTitle)
     }
 }
 
