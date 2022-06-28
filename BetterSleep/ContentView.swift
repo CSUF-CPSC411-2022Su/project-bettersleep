@@ -9,10 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("Hello World")
+        TabView {
+            wakeUpTimeView()
+                .tabItem {
+                    Image(systemName: "alarm.fill")
+                    Text("Set Wake Up Time")
+                }
+            TimerView()
+                .tabItem{
+                    Image(systemName:"timer")
+                    Text("Sleep Timer")
+                }
+            statsViews()
+                .tabItem{
+                    Image(systemName: "chart.bar.fill")
+                    Text("Statistics")
+                }
         }
-            .padding()
     }
 }
 struct ContentView_Previews: PreviewProvider {

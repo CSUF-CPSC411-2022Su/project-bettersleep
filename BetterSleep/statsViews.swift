@@ -5,7 +5,7 @@
 //  Created by Nazeri, Daniel on 6/20/22.
 //
 
-import SwiftUI
+//import SwiftUI
 
 // Display stats from stats.swift
 //struct statsList: View {
