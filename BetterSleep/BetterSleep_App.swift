@@ -9,9 +9,8 @@ import SwiftUI
 @main
 struct BetterSleep_App: App {
     var body: some Scene {
-       WindowGroup {
-          ContentView()
-            ViewController()
-      }
+         WindowGroup {
+          AudioRecordView()
+     }
     }
 }

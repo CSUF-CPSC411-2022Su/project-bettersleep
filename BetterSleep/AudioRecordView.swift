@@ -1,52 +1,63 @@
 //
 //  AudioRecordView.swift
-//  BetterSleep (iOS)
+//  AudioRecord
+//Created by tilak Ghorashainee 6/13/2022
 //
-//  Created by Tilak Ghorashainee on 6/20/22.
-//
+
 import Foundation
+
 import SwiftUI
-struct AudioRecordInfo: View {
+import AVFoundation
+struct AudioRecordView: View{
     @State var AVAudioRecorder: String = " "
-    var body: some View {
-        NavigationView {
-            VStack {
-               List {
-                    Section(header: Text("AudioRecordSleep track")) {
-                        NavigationLink(destination: Text("Record For Better Sleep")) {
-                           Text("Slepping Record")
-                        }
-                        }
-                      }
+    var body: some View{
+       Home()
+        //darkmode color for the home scree
+            .preferredColorScheme(.dark)
+      
+        
+        TabView{
+               AudioRecordInfo()
+                .tabItem {
+                    Image(systemName: "info")
+                    Text("Better Sleep")
+                }
+           // Text("BetterSleep info")
+          //  .tag(1)
+          //  Rectangle()
+            //Image(systemName:"info")
+
+        }
+    }
+    struct Home: View{
+    @State var record = false
+    var body: some View{
+    NavigationView{
+        VStack{
+            Button(action:{
+                self.record.toggle()
+            }) {
+                    ZStack{
+                       Circle()
+                        .fill(Color.red)
+                        .frame(width:70, height:70)
+                  if self.record{
+                        Circle()
+                            .stroke(Color.white, lineWidth: 5)
+                            .frame(width:85, height:85)
                     }
                 }
-                Spacer()
             }
+            .padding(.vertical,10)
         }
-
-struct AddCrossWalk: View {
-    @SceneStorage("AudioRecordName") var crosswalkName: String = ""
-    var body: some View {
-        NavigationView {
-            VStack {
-                HStack {
-                Text("AudioRecord Submission")
-                    .bold()
-                    .font(.largeTitle)
-                }
-                .padding(.bottom, 30)
-
-                HStack {
-                    Text("AudioRecord Name")
-                        .bold()
-                    Spacer()
-                }
-                .padding(.bottom, 5)
-                    Text("Submit")
-                      // .modifier(ButtonDesign())
-                }
-                Spacer()
-            }
-            .padding()
+        .navigationBarTitle("Audio Record")
+       }
+    }
+  }
+    struct ContentView_Previews: PreviewProvider{
+      static var previews: some View {
+          AudioRecordView()
+           
         }
+      }
     }
