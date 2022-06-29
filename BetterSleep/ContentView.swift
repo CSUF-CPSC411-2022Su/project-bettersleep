@@ -25,6 +25,17 @@ struct ContentView: View {
                     Image(systemName: "chart.bar.fill")
                     Text("Statistics")
                 }
+          
+                AudioRecordInfo()
+                    .tabItem {
+                        Image(systemName: "info")
+                        Text("Sleep info")
+                    }
+            RecordView()
+                .tabItem{
+                    Image(systemName:"info")
+                    Text("Record history")
+                }
         }
     }
 }
@@ -32,4 +43,4 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
-}
+  }
