@@ -11,12 +11,23 @@ struct AudioRecordInfo: View {
     var body: some View {
         NavigationView {
             VStack {
+                HStack{
+                Text("Sleep History")
+                    .bold()
+                    .font(.largeTitle)
+                }
                List {
-                    Section(header: Text("AudioRecordSleep track")) {
-                        NavigationLink(destination: Text("Record For Better Sleep")) {
-                           Text("Slepping Record")
-                        }
-                        }
+                    Section(header: Text("Audio Sleep History")) {
+                        NavigationLink(destination: Text("you are good sleep")) {
+                           Text("Slepping Record")                        }
+                       }
+                   HStack {
+                       NavigationLink(destination: Text("you are snowring 10%, couffing 5%")){
+                       Text("Noise")
+                           .bold()
+                           Spacer()
+                       }
+                       }
                       }
                     }
                 }
@@ -24,20 +35,20 @@ struct AudioRecordInfo: View {
             }
         }
 
-struct AddCrossWalk: View {
-    @SceneStorage("AudioRecordName") var crosswalkName: String = ""
+struct RecordView: View {
+    @SceneStorage("AudioRecordName") var AudioRecordName: String = ""
     var body: some View {
         NavigationView {
             VStack {
                 HStack {
-                Text("AudioRecord Submission")
+                Text("Noise History")
                     .bold()
                     .font(.largeTitle)
                 }
                 .padding(.bottom, 30)
 
                 HStack {
-                    Text("AudioRecord Name")
+                    Text("Record History")
                         .bold()
                     Spacer()
                 }

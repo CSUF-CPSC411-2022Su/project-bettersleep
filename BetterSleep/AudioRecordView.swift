@@ -14,18 +14,13 @@ struct AudioRecordView: View{
        Home()
         //darkmode color for the home scree
             .preferredColorScheme(.dark)
-      
-        
-        TabView{
-               AudioRecordInfo()
-                .tabItem {
-                    Image(systemName: "info")
-                    Text("Better Sleep")
+       TabView{
+              AudioRecordInfo()
+               .tabItem {
+                   Image(systemName: "info")
+                   Text("sleep info")
                 }
-           // Text("BetterSleep info")
-          //  .tag(1)
-          //  Rectangle()
-            //Image(systemName:"info")
+          
 
         }
     }
@@ -50,14 +45,14 @@ struct AudioRecordView: View{
             }
             .padding(.vertical,10)
         }
-        .navigationBarTitle("Audio Record")
+        .navigationBarTitle("Audio sleep Record")
        }
     }
   }
-    struct ContentView_Previews: PreviewProvider{
+   struct RecordView_Previews: PreviewProvider{
       static var previews: some View {
-          AudioRecordView()
+         AudioRecordView()
            
         }
       }
-    }
+   }

@@ -7,7 +7,6 @@
 
 import Foundation
 import SwiftUI
-
 struct TextEntry: ViewModifier {
     func body(content: Content) -> some View {
         content

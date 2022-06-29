@@ -37,10 +37,14 @@
 		7A7F8341286BA488006A2F22 /* AudioRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F833F286BA488006A2F22 /* AudioRecordView.swift */; };
 		7A7F8342286BA488006A2F22 /* AudioRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F833F286BA488006A2F22 /* AudioRecordView.swift */; };
 		7A7F8343286BA488006A2F22 /* AudioRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F833F286BA488006A2F22 /* AudioRecordView.swift */; };
-		7AEEC0B5286956BE00C6B02D /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEC0B4286956BE00C6B02D /* Record.swift */; };
-		7AEEC0B6286956BE00C6B02D /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEC0B4286956BE00C6B02D /* Record.swift */; };
-		7AEEC0B7286956BE00C6B02D /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEC0B4286956BE00C6B02D /* Record.swift */; };
-		7AEEC0B8286956BE00C6B02D /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEC0B4286956BE00C6B02D /* Record.swift */; };
+		7A7F83DD286C0721006A2F22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F83DC286C0721006A2F22 /* ContentView.swift */; };
+		7A7F83DE286C0721006A2F22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F83DC286C0721006A2F22 /* ContentView.swift */; };
+		7A7F83DF286C0721006A2F22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F83DC286C0721006A2F22 /* ContentView.swift */; };
+		7A7F83E0286C0721006A2F22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F83DC286C0721006A2F22 /* ContentView.swift */; };
+		7AEEC0B5286956BE00C6B02D /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEC0B4286956BE00C6B02D /* RecordView.swift */; };
+		7AEEC0B6286956BE00C6B02D /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEC0B4286956BE00C6B02D /* RecordView.swift */; };
+		7AEEC0B7286956BE00C6B02D /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEC0B4286956BE00C6B02D /* RecordView.swift */; };
+		7AEEC0B8286956BE00C6B02D /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEC0B4286956BE00C6B02D /* RecordView.swift */; };
 		7AEEC0BA28695F3F00C6B02D /* AudioRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEC0B928695F3F00C6B02D /* AudioRecord.swift */; };
 		7AEEC0BB28695F3F00C6B02D /* AudioRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEC0B928695F3F00C6B02D /* AudioRecord.swift */; };
 		7AEEC0BC28695F3F00C6B02D /* AudioRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEC0B928695F3F00C6B02D /* AudioRecord.swift */; };
@@ -83,7 +87,8 @@
 		4EE3596828514BCB00AC283D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7A3BA68E286A67B600FAEFC6 /* Tests-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Tests-iOS-Info.plist"; sourceTree = "<group>"; };
 		7A7F833F286BA488006A2F22 /* AudioRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecordView.swift; sourceTree = "<group>"; };
-		7AEEC0B4286956BE00C6B02D /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		7A7F83DC286C0721006A2F22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7AEEC0B4286956BE00C6B02D /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
 		7AEEC0B928695F3F00C6B02D /* AudioRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecord.swift; sourceTree = "<group>"; };
 		7AEEC0BE2869642300C6B02D /* Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,7 +174,8 @@
 				4EE3596728514BCB00AC283D /* Preview Content */,
 				7AEEC0B928695F3F00C6B02D /* AudioRecord.swift */,
 				7A7F833F286BA488006A2F22 /* AudioRecordView.swift */,
-				7AEEC0B4286956BE00C6B02D /* Record.swift */,
+				7A7F83DC286C0721006A2F22 /* ContentView.swift */,
+				7AEEC0B4286956BE00C6B02D /* RecordView.swift */,
 				7AEEC0BE2869642300C6B02D /* Modifier.swift */,
 			);
 			path = BetterSleep;
@@ -351,9 +357,10 @@
 			files = (
 				7AEEC0BF2869642300C6B02D /* Modifier.swift in Sources */,
 				4EE3597228514BCB00AC283D /* BetterSleep_Tests.swift in Sources */,
-				7AEEC0B5286956BE00C6B02D /* Record.swift in Sources */,
+				7AEEC0B5286956BE00C6B02D /* RecordView.swift in Sources */,
 				7AEEC0BA28695F3F00C6B02D /* AudioRecord.swift in Sources */,
 				7A7F8340286BA488006A2F22 /* AudioRecordView.swift in Sources */,
+				7A7F83DD286C0721006A2F22 /* ContentView.swift in Sources */,
 				4EE3596A28514BCB00AC283D /* BetterSleep_UITestsLaunchTests.swift in Sources */,
 				4EE3596E28514BCB00AC283D /* BetterSleep_UITests.swift in Sources */,
 				4EE3597628514BCB00AC283D /* BetterSleep_App.swift in Sources */,
@@ -367,8 +374,9 @@
 				7AEEC0C02869642300C6B02D /* Modifier.swift in Sources */,
 				4EE3597328514BCB00AC283D /* BetterSleep_Tests.swift in Sources */,
 				7AEEC0BB28695F3F00C6B02D /* AudioRecord.swift in Sources */,
-				7AEEC0B6286956BE00C6B02D /* Record.swift in Sources */,
+				7AEEC0B6286956BE00C6B02D /* RecordView.swift in Sources */,
 				7A7F8341286BA488006A2F22 /* AudioRecordView.swift in Sources */,
+				7A7F83DE286C0721006A2F22 /* ContentView.swift in Sources */,
 				4EE3596B28514BCB00AC283D /* BetterSleep_UITestsLaunchTests.swift in Sources */,
 				4EE3596F28514BCB00AC283D /* BetterSleep_UITests.swift in Sources */,
 				4EE3597728514BCB00AC283D /* BetterSleep_App.swift in Sources */,
@@ -382,8 +390,9 @@
 				7AEEC0C12869642300C6B02D /* Modifier.swift in Sources */,
 				4EE3597428514BCB00AC283D /* BetterSleep_Tests.swift in Sources */,
 				7AEEC0BC28695F3F00C6B02D /* AudioRecord.swift in Sources */,
-				7AEEC0B7286956BE00C6B02D /* Record.swift in Sources */,
+				7AEEC0B7286956BE00C6B02D /* RecordView.swift in Sources */,
 				7A7F8342286BA488006A2F22 /* AudioRecordView.swift in Sources */,
+				7A7F83DF286C0721006A2F22 /* ContentView.swift in Sources */,
 				4EE3596C28514BCB00AC283D /* BetterSleep_UITestsLaunchTests.swift in Sources */,
 				4EE3597028514BCB00AC283D /* BetterSleep_UITests.swift in Sources */,
 				4EE3597828514BCB00AC283D /* BetterSleep_App.swift in Sources */,
@@ -397,8 +406,9 @@
 				7AEEC0C22869642300C6B02D /* Modifier.swift in Sources */,
 				4EE3597528514BCB00AC283D /* BetterSleep_Tests.swift in Sources */,
 				7AEEC0BD28695F3F00C6B02D /* AudioRecord.swift in Sources */,
-				7AEEC0B8286956BE00C6B02D /* Record.swift in Sources */,
+				7AEEC0B8286956BE00C6B02D /* RecordView.swift in Sources */,
 				7A7F8343286BA488006A2F22 /* AudioRecordView.swift in Sources */,
+				7A7F83E0286C0721006A2F22 /* ContentView.swift in Sources */,
 				4EE3596D28514BCB00AC283D /* BetterSleep_UITestsLaunchTests.swift in Sources */,
 				4EE3597128514BCB00AC283D /* BetterSleep_UITests.swift in Sources */,
 				4EE3597928514BCB00AC283D /* BetterSleep_App.swift in Sources */,

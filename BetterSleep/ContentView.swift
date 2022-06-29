@@ -1,0 +1,32 @@
+//
+//  ContentView.swift
+//  BetterSleep
+//
+//  Created by tilak Ghorashainee on 6/28/22.
+//
+
+import Foundation
+import Foundation
+import SwiftUI
+struct ContentView: View {
+    var body: some View {
+        TabView {
+            AudioRecordInfo()
+                .tabItem {
+                    Image(systemName: "info")
+                    Text("Audio Record")
+                }
+            RecordView()
+                .tabItem{
+                    Image(systemName:"info")
+                    Text("Record history")
+                }
+
+        }
+    }
+}
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
