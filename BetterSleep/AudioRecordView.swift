@@ -32,6 +32,7 @@ struct AudioRecordView: View{
             Button(action:{
                 self.record.toggle()
             }) {
+                // Create a record button
                     ZStack{
                        Circle()
                         .fill(Color.red)

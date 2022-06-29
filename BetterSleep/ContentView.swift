@@ -9,6 +9,7 @@ import Foundation
 import Foundation
 import SwiftUI
 struct ContentView: View {
+    @StateObject var manager = AudioRecordManager()
     var body: some View {
         TabView {
             AudioRecordInfo()

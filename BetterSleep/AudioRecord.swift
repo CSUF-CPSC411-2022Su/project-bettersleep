@@ -10,7 +10,7 @@ class AudioRecordManager: ObservableObject {
   @Published var audiorecords: [AudioRecord] = []
     
   init() {
-     // Add initial crosswalks for testing
+     // Add initial audio record  for testing
       audiorecords.append(AudioRecord(name: "Track sleep",description: "Audio Record"))
   }
 }

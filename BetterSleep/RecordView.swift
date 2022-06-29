@@ -7,6 +7,7 @@
 import Foundation
 import SwiftUI
 struct AudioRecordInfo: View {
+    @EnvironmentObject var manager: AudioRecordManager
     @State var AVAudioRecorder: String = " "
     var body: some View {
         NavigationView {
@@ -21,6 +22,7 @@ struct AudioRecordInfo: View {
                         NavigationLink(destination: Text("you are good sleep")) {
                            Text("Slepping Record")                        }
                        }
+                   // give the histroy of the record
                    HStack {
                        NavigationLink(destination: Text("you are snowring 10%, couffing 5%")){
                        Text("Sleeping Noise record")
