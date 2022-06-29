@@ -17,7 +17,7 @@ struct AudioRecordInfo: View {
                     .font(.largeTitle)
                 }
                List {
-                    Section(header: Text("Audio Sleep History")) {
+                    Section(header: Text("RecordSleep History")) {
                         NavigationLink(destination: Text("you are good sleep")) {
                            Text("Slepping Record")                        }
                        }
@@ -48,7 +48,7 @@ struct RecordView: View {
                 .padding(.bottom, 30)
 
                 HStack {
-                    Text("Record History")
+                    Text("Sleep History")
                         .bold()
                     Spacer()
                 }
