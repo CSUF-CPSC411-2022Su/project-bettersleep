@@ -1,30 +1,28 @@
-//
+
 //  ContentView.swift
 //  BetterSleep
 //
-//  Created by Nazeri, Daniel on 6/8/22.
+//  Created by tilak Ghorashainee on 6/28/22.
 //
 
+import Foundation
+import Foundation
 import SwiftUI
-
 struct ContentView: View {
+    @StateObject var manager = AudioRecordManager()
     var body: some View {
         TabView {
-            wakeUpTimeView()
+            AudioRecordInfo()
                 .tabItem {
-                    Image(systemName: "alarm.fill")
-                    Text("Set Wake Up Time")
+                    Image(systemName: "info")
+                    Text("Sleep info")
                 }
-            TimerView()
+            RecordView()
                 .tabItem{
-                    Image(systemName:"timer")
-                    Text("Sleep Timer")
+                    Image(systemName:"info")
+                    Text("Record history")
                 }
-//            statsViews()
-//                .tabItem{
-//                    Image(systemName: "chart.bar.fill")
-//                    Text("Statistics")
-//                }
+
         }
     }
 }
