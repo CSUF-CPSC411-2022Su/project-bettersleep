@@ -59,13 +59,34 @@ struct RecordView: View {
                         .bold()
                     Spacer()
                 }
-                .padding(.bottom, 5)
-                    Text("Record ")
-                    .modifier(ButtonDesign())
+                HStack {
+                    Text("Snoring")
+                        .bold()
+                    Spacer()
+                }
+                Button(action:{
+                            }) {
+                                // Create a record button
+                                    ZStack{
+                                       Circle()
+                                        .fill(Color.red)
+                                        .frame(width:70, height:70)
+                                  
+                                        Circle()
+                                            .stroke(Color.white, lineWidth: 5)
+                                            .frame(width:85, height:85)
+                                    }
+                                    .padding(.bottom, 5)
+                                 Text("Record ")
+                                .modifier(ButtonDesign())
+                                }
+                            }
+                            .padding(.vertical,10)
+                        }
+                        .navigationBarTitle("Audio sleep Record")
                     
                 }
-                Spacer()
+        
             }
-            .padding()
-        }
-    }
+          
+        
