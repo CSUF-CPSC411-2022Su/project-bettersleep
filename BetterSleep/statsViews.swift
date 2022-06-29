@@ -8,12 +8,18 @@
 import SwiftUI
 
 // Display stats from stats.swift
-struct statsList: View {
+struct statsViews: View {
+    @StateObject var stats = Stats()
+    
     var body: some View {
         VStack {
             Text("The last 7 days, you've slept for...")
-            ForEach(Stats) {
-                Text("\(Stats) hours")
+            ForEach(stats.hours, id: \.self) {
+                hours in
+                HStack {
+                    Image(systemName: "moon.zzz.fill")
+                    Text("\(hours, specifier: "%.1f") hours")
+                }
             }
         }
     }

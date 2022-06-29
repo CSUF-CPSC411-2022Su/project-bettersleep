@@ -12,7 +12,7 @@ import Foundation
 
 class Stats: ObservableObject, Identifiable{
     // Properties
-    var hours = [4.7, 7.5, 6.5, 5.4, 6.3, 8.1, 5.9]
+    @Published var hours = [4.7, 7.5, 6.5, 5.4, 6.3, 8.1, 5.9]
     
     func returnCont() -> Int{
         return hours.count
