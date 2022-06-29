@@ -14,7 +14,7 @@ struct ContentView: View {
             AudioRecordInfo()
                 .tabItem {
                     Image(systemName: "info")
-                    Text("Audio Record")
+                    Text("Sleep info")
                 }
             RecordView()
                 .tabItem{
