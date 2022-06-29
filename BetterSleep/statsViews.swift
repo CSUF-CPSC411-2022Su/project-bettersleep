@@ -5,14 +5,11 @@
 //  Created by Nazeri, Daniel on 6/20/22.
 //
 
-import SwiftUI
-import SwiftUICharts
+//import SwiftUI
 
 // Display stats from stats.swift
-struct statsList: View {
-    var body: some View{
-        VStack {
-            print(stats)
-        }
-    }
-}
+//struct statsList: View {
+//    VStack {
+//        print(stats)
+//    }
+//}
