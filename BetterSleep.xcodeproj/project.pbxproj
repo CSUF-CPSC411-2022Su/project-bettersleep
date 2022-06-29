@@ -316,6 +316,9 @@
 				Base,
 			);
 			mainGroup = 4EE358A42851459800AC283D;
+			packageReferences = (
+				4EB3D7D12863D2E600DFFAFD /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = 4EE358B22851459C00AC283D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -807,6 +810,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4EB3D7D12863D2E600DFFAFD /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 4EE358A52851459800AC283D /* Project object */;
 }
