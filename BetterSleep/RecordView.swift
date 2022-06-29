@@ -23,7 +23,7 @@ struct AudioRecordInfo: View {
                        }
                    HStack {
                        NavigationLink(destination: Text("you are snowring 10%, couffing 5%")){
-                       Text("Noise")
+                       Text("Sleeping Noise record")
                            .bold()
                            Spacer()
                        }
