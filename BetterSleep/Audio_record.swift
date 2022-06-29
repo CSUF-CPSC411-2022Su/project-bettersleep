@@ -83,3 +83,32 @@ struct RecordView: View {
                         .navigationBarTitle("Audio sleep Record")
                     }
             }
+class AddRecordHistoryList: ObservableObject {
+    @Published var searchStrings: [String] = []
+    var maxRecord: Int = 5
+    var fileURL: URL
+    
+    init() {
+        
+        let documentsDirectory =
+           FileManager.default.urls(for: .documentDirectory,
+                                     in: .userDomainMask).first!
+        
+        
+        fileURL =
+            documentsDirectory.appendingPathComponent("Audiorecord")
+                .appendingPathExtension("plist")
+                AudioHistory()
+        }
+    func AudioHistory() {
+       
+        let propertyListDecoder = PropertyListDecoder()
+                if let retrievedURL = try? Data(contentsOf: fileURL),
+                    let decodedURL = try?
+                    propertyListDecoder.decode(Array<String>.self,
+                   from: retrievedURL) {
+                    searchStrings = decodedURL
+                }
+            }
+         }
+
