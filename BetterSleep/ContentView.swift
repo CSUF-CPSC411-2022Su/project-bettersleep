@@ -22,7 +22,6 @@ struct ContentView: View {
                     Image(systemName:"info")
                     Text("Record history")
                 }
-
         }
     }
 }

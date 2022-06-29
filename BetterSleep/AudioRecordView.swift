@@ -13,7 +13,7 @@ struct AudioRecordInfo: View {
         NavigationView {
             VStack {
                 HStack{
-                Text("Sleep History")
+                Text("Sleep Audio Record")
                     .bold()
                     .font(.largeTitle)
                 }
@@ -50,43 +50,70 @@ struct RecordView: View {
                 .padding(.bottom, 30)
 
                 HStack {
-                    Text("Coffing")
+                    Text("Coffing........")
                         .bold()
                     Spacer()
                 }
                 HStack {
-                    Text("Walking sound")
+                    Text("Walking sound........")
                         .bold()
                     Spacer()
                 }
                 HStack {
-                    Text("Snoring")
+                    Text("Snoring..........")
                         .bold()
                     Spacer()
                 }
                 Button(action:{
                             }) {
                                 // Create a record button
-                                    ZStack{
-                                       Circle()
-                                        .fill(Color.red)
-                                        .frame(width:70, height:70)
-                                  
+                                    VStack{
                                         Circle()
-                                            .stroke(Color.white, lineWidth: 5)
-                                            .frame(width:85, height:85)
+                                            .fill(Color.red)
+                                            .overlay(Circle()
+                                            .stroke(lineWidth: 5)
+                                            .foregroundColor(.black))
+                                            .frame(width: 200, height: 200)
+                                        
                                     }
                                     .padding(.bottom, 5)
+                                HStack{
                                  Text("Record ")
                                 .modifier(ButtonDesign())
                                 }
+                               }
                             }
                             .padding(.vertical,10)
                         }
                         .navigationBarTitle("Audio sleep Record")
-                    
-                }
+                    }
         
+    class AddRecordHistoryList: ObservableObject {
+        @Published var searchStrings: [String] = []
+        var maxRecord: Int = 5
+        var fileURL: URL
+        
+        init() {
+            
+            let documentsDirectory =
+               FileManager.default.urls(for: .documentDirectory,
+                                         in: .userDomainMask).first!
+            
+            
+            fileURL =
+                documentsDirectory.appendingPathComponent("Audiorecord")
+                    .appendingPathExtension("plist")
+                    AudioHistory()
             }
-          
-        
+        func AudioHistory() {
+           
+            let propertyListDecoder = PropertyListDecoder()
+                    if let retrievedURL = try? Data(contentsOf: fileURL),
+                        let decodedURL = try?
+                        propertyListDecoder.decode(Array<String>.self,
+                       from: retrievedURL) {
+                        searchStrings = decodedURL
+                    }
+                }
+             }
+          }
