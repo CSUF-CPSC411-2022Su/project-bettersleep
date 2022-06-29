@@ -9,10 +9,12 @@ import SwiftUI
 
 // Display stats from stats.swift
 struct statsList: View {
-    @ObservedObject var model = Model()
     var body: some View {
         VStack {
-            print(Stats)
+            Text("The last 7 days, you've slept for...")
+            ForEach(Stats) {
+                Text("\(Stats) hours")
+            }
         }
     }
 }
