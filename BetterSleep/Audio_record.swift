@@ -6,7 +6,7 @@
 import Foundation
 import SwiftUI
 struct AudioRecordInfo: View {
-//    @EnvironmentObject var manager: AudioRecordManager
+    @EnvironmentObject var manager: AudioRecordManager
     @State var AVAudioRecorder: String = " "
     var body: some View {
         NavigationView {
